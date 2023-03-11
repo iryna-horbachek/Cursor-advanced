@@ -1,34 +1,33 @@
-const numberOne = +prompt('Введіть число');
-const numberTwo = +prompt('Введіть друге число');
-const addEvenNumber = confirm('Бажаєте пропускати парні числа?');
+let numberOne;
+let numberTwo;
+let addEvenNumber;
 let result = 0;
 
-if (isNaN(numberOne) || isNaN(numberTwo)) {
-    alert('Це не число');
-}
-else if (!Number.isInteger(numberOne)|| !Number.isInteger(numberTwo)) {
-    alert('Введіть ціле число')
-} 
-else if (numberOne <= 0 || numberTwo <= 0) {
-    alert('Ведіть число більше 0')
-}
-else if (numberTwo <= numberOne) {
-    alert('Друге число має бути більшим ніж перше')
-}
-else {
-   console.log(numberOne);
-   console.log(numberTwo);
-   for(let i = numberOne; i <= numberTwo; i++) {
+do {
+    numberOne = +prompt('Введіть ціле число більше 0');
+} while (numberOne <= 0 || isNaN(numberOne) || !Number.isInteger(numberOne));
+
+console.log(numberOne);
+
+do {
+    numberTwo = +prompt('Введіть друге ціле число більше ніж перше');
+} while (numberTwo <= 0 || isNaN(numberTwo) || !Number.isInteger(numberTwo) || numberTwo <= numberOne);
+
+console.log(numberTwo);
+
+addEvenNumber = confirm('Бажаєте пропускати парні числа?');
+
+for(let i = numberOne; i <= numberTwo; i++) {
     if (!addEvenNumber) {
         if (i % 2 === 0) {
             continue;
             }
         }    
-            result += i; 
+    result += i; 
 }
 console.log(result);
    
-}
+
 
 
    
