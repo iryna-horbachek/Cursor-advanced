@@ -14,9 +14,9 @@ console.log(pairsArray(students));
 //Add theme to pairs
 function studentsTheme(persons, subjects) {
     const studentsGroup = [];
-        studentsGroup.push([persons[0], persons[3], subjects[0]]);
-        studentsGroup.push([persons[1], persons[2], subjects[1]]);
-        studentsGroup.push([persons[4], persons[5], subjects[2]]);
+        studentsGroup.push([persons[0] + ` i ` + persons[3], subjects[0]]);
+        studentsGroup.push([persons[1] + ` i ` + persons[2], subjects[1]]);
+        studentsGroup.push([persons[4] + ` i ` + persons[5], subjects[2]]);
     return studentsGroup;
 }
 
@@ -45,3 +45,5 @@ function randomMark(markForEachGroup) {
 }
 
 console.log(randomMark(studentsTheme(students, themes)));
+
+
