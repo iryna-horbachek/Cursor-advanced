@@ -6,7 +6,8 @@ function generateBlocks() {
             const square = document.createElement('square');
             square.style.background = getRandomColor();
             container.append(square);
-        }              
+        }       
+    return container;       
 }
 
 function getRandomColor() {
