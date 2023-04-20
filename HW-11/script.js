@@ -14,7 +14,7 @@ async function getRandomChinese(length) {
             result += chineseNumbers;
             await newPromise;    
     }
-      console.log(result);
+      return result;
 }
 
-getRandomChinese(4);
+getRandomChinese(4).then((resp => console.log(resp)));
