@@ -1,0 +1,26 @@
+body {
+    background: beige;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.curText {
+    margin: 100px 20px 100px 20px;
+}
+.btn {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: aqua;
+    font-weight: bold;
+}
+.btn:hover {
+    background-color: rgb(26, 204, 204);
+    transform: scale(1.1);
+    transition: 0.1s;
+}
