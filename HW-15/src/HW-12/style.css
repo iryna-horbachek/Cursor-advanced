@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url('word-image.png') center center / cover no-repeat;
+    min-height: 100vh;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn {
+    width: 200px;
+    height: 60px;
+    background-color: rgb(94, 130, 152);
+    border-radius: 60%;
+    border: 2px solid rgb(9, 61, 93);
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: 'Bruno Ace', cursive;
+    color: rgb(171, 187, 202);
+}
+.btn:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: rgb(192, 200, 208);
+    box-shadow: 2px 2px 2px 2px rgb(40, 134, 192);
+}
+.title {
+    margin-bottom: 50px;
+    font-size: 40px;
+    letter-spacing: .3rem;
+    color: rgb(135, 206, 222);
+    text-shadow: #FC0 1px 0 10px;
+    border-bottom: 1px solid rgb(218, 218, 243);
+    font-family: 'Bruno Ace', cursive;
+}
+.title:hover {
+    text-shadow: #FC0 2px 0 20px;
+    font-size: 42px;
+    transition: 0.2s;
+    border-bottom: 2px solid rgb(218, 218, 243);
+}
+.card, .planet {
+    font-family: 'Bruno Ace', cursive;
+    border: 2px solid grey;
+    width: 250px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(141 189 205 / 20%);
+}
+.card:hover, .planet:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    filter: drop-shadow(0 0 0.75rem rgb(229, 223, 165));
+    background-color: rgb(141 189 205 / 30%);
+    border: 4px solid grey;
+}
+.name, .planet-name {
+    color: #FC0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.blockCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    gap: 20px;
+    margin-top: 30px;
+}
+.birth {
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+.img {
+    width: 230px;
+    height: 230px;
+    margin-top: auto;
+}
+.planet-population {
+    display: flex;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+.planet-terrain {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
