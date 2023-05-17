@@ -19,6 +19,7 @@ function Twit () {
     image: img,
     date: '13 may 2023',
 }
+  const main_image = "https://www.thepinknews.com/wp-content/uploads/2023/05/eurovision-loreen-sweden-win.jpg?w=1584&h=832&crop=1";
  
   return (
     <div className='Post'>
@@ -31,7 +32,7 @@ function Twit () {
       </div>
       <p className='Text'>{person.content}</p>
       <img
-        className='Img' src={person.image} alt={description}
+        className='Img' src={main_image} alt={description}
       />
       <div className='Social'>
         <div className='Icon Facebook-icon'>
