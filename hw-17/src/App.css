@@ -1,0 +1,34 @@
+#root {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(249, 244, 244);
+  height: auto;
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.Contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Contact {
+  background-color: rgb(166, 207, 244);
+  width: 300px;
+  margin: 20px;
+}
+.Contact:hover {
+  box-shadow: 5px 5px 5px 5px rgb(155, 170, 187);
+}
+.Name {
+  font-size: 20px;
+}
+.Search {
+  padding: 10px;
+}
+.Search:focus {
+  border: 1px solid blue;
+}
+.OtherData {
+  background-color: rgb(125, 185, 238);
+  margin: 10px;
+}
